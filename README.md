@@ -1,2 +1,13 @@
-# mpox-lca
-Reproducible R scripts for analyzing mpox risk profiles using latent class analysis (LCA) and evaluating targeted vaccination prioritization strategies under limited vaccine supply scenarios.
+# Multidimensional Risk Stratification for Mpox Preparedness and Vaccine Prioritization among MSM in China
+This repository contains the source code for the modelling study: "Multidimensional Risk Stratification for Mpox Preparedness and Vaccine Prioritization among MSM in China", submitted for publication
+In settings with evolving mpox epidemiology, recurrent importation risk, and constrained vaccine supply, preparedness efforts require risk-informed prioritization strategies to allocate limited doses efficiently. However, current approaches often rely on a single behavioral or clinical dimension and may not fully capture heterogeneity in mpox risk among men who have sex with men (MSM). This study aimed to characterize multidimensional mpox risk stratification among MSM and evaluate its implications for simulated vaccine prioritization.
+# 1. Methodology Overview
+We conducted a case-control study among MSM in a major metropolitan city in China. Cases included all laboratory-confirmed mpox infections reported between January 2023 and March 2024 (n = 138). Controls were MSM aged ≥18 years who were recruited between January 2023 and May 2024, had no diagnosis of mpox during the study period, and reported no related symptoms (n = 151). Latent class analysis (LCA) was used to identify multidimensional risk profiles based on demographic, behavioral, and clinical characteristics. We then simulated vaccine prioritization under constrained supply and compared behavioral risk-based, clinical risk-based, and LCA-informed allocation strategies, using case coverage as the performance metric. 
+# 2. Repository Structure
+mpox data analysis: Performs data preprocessing, latent class analysis (LCA), risk scoring, and evaluation of mpox vaccination prioritization strategies using behavioral, clinical, and LCA-informed approaches.
+mpox visualization: Generates publication-quality visualizations of LCA profiles, MCA projections, mpox risk patterns, and vaccination prioritization performance curves.
+# 3. Data Availability
+The datasets generated and/or analyzed during the current study are not publicly available due to privacy and confidentiality considerations related to sensitive epidemiological, clinical, and behavioral information among men who have sex with men, but are available from the corresponding author on reasonable request and subject to approval by the relevant ethics committee and data custodian.
+# 4. Requirements
+R Versions: 4.3.3
+Dependencies: tidyverse, poLCA, vcd, FactoMineR, factoextra, missMDA, scales
