@@ -1,14 +1,36 @@
 # Multidimensional Risk Stratification for Mpox Preparedness and Vaccine Prioritization among MSM in China
-This repository contains the source code for the modelling study: "Multidimensional Risk Stratification for Mpox Preparedness and Vaccine Prioritization among MSM in China", submitted for publication.  
+This repository contains the source code for the modelling study: "**Multidimensional Risk Stratification for Mpox Preparedness and Vaccine Prioritization among MSM in China**", submitted for publication.  
 
 In settings with evolving mpox epidemiology, recurrent importation risk, and constrained vaccine supply, preparedness efforts require risk-informed prioritization strategies to allocate limited doses efficiently. However, current approaches often rely on a single behavioral or clinical dimension and may not fully capture heterogeneity in mpox risk among men who have sex with men (MSM). This study aimed to characterize multidimensional mpox risk stratification among MSM and evaluate its implications for simulated vaccine prioritization.
 # 1. Methodology Overview
-We conducted a case-control study among MSM in a major metropolitan city in China. Cases included all laboratory-confirmed mpox infections reported between January 2023 and March 2024 (n = 138). Controls were MSM aged ≥18 years who were recruited between January 2023 and May 2024, had no diagnosis of mpox during the study period, and reported no related symptoms (n = 151). Latent class analysis (LCA) was used to identify multidimensional risk profiles based on demographic, behavioral, and clinical characteristics. We then simulated vaccine prioritization under constrained supply and compared behavioral risk-based, clinical risk-based, and LCA-informed allocation strategies, using case coverage as the performance metric. 
+We conducted a case-control study among MSM in a major metropolitan city in China. Cases included all laboratory-confirmed mpox infections reported between January 2023 and March 2024 (n = 138). Controls were MSM aged ≥18 years who were recruited between January 2023 and May 2024, had no diagnosis of mpox during the study period, and reported no related symptoms (n = 151). 
+
+Latent class analysis (LCA) was used to identify multidimensional risk profiles based on demographic, behavioral, and clinical characteristics. 
+
+We then simulated vaccine prioritization under constrained supply and compared behavioral risk-based, clinical risk-based, and LCA-informed allocation strategies, using case coverage as the performance metric. 
 # 2. Repository Structure
-mpox data analysis: Performs data preprocessing, latent class analysis (LCA), risk scoring, and evaluation of mpox vaccination prioritization strategies using behavioral, clinical, and LCA-informed approaches.
-mpox visualization: Generates publication-quality visualizations of LCA profiles, MCA projections, mpox risk patterns, and vaccination prioritization performance curves.
+**mpox data analysis**: Performs data preprocessing, latent class analysis (LCA), risk scoring, and evaluation of mpox vaccination prioritization strategies using behavioral, clinical, and LCA-informed approaches.
+
+**mpox visualization**: Generates publication-quality visualizations of LCA profiles, MCA projections, mpox risk patterns, and vaccination prioritization performance curves.
 # 3. Data Availability
 The datasets generated and/or analyzed during the current study are not publicly available due to privacy and confidentiality considerations related to sensitive epidemiological, clinical, and behavioral information among men who have sex with men, but are available from the corresponding author on reasonable request and subject to approval by the relevant ethics committee and data custodian.
 # 4. Requirements
-R Versions: 4.3.3
-Dependencies: tidyverse, poLCA, vcd, FactoMineR, factoextra, missMDA, scales
+**R Versions**: 4.3.3
+
+**Dependencies**: tidyverse, poLCA, vcd, FactoMineR, factoextra, missMDA, scales
+# 5. Usage
+The provided R scripts implement the data preprocessing, latent class analysis (LCA), risk stratification, and vaccine prioritization simulation described in this study.
+
+Due to privacy and ethical restrictions, the individual-level dataset used in this study cannot be publicly released. Researchers interested in reproducing or extending the analysis should obtain access to the data through appropriate ethical approval and data governance procedures.
+
+After obtaining the dataset, users can run the scripts sequentially:
+
+1. `mpox data analysis.R`  
+   Performs data preprocessing, latent class analysis, risk scoring, and evaluation of vaccine prioritization strategies.
+
+2. `mpox visualization.R`  
+   Generates figures and visualizations based on the analytical outputs produced by the previous script.
+
+The scripts require an input dataset with variables corresponding to those described in the manuscript.
+# 6. License
+This project is licensed under the MIT License.
